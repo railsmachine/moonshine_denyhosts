@@ -13,10 +13,10 @@ Configure as necessary in your moonshine.yml (or stage-specific moonshine yml):
 
     :denyhosts:
       :allow:
-        - ALL : 127.0.0.1
-        - sshd : 1.2.3.4
+        - 'ALL : 127.0.0.1'
+        - 'sshd : 1.2.3.4'
       :deny:
-        - sshd : PARANOID
+        - 'sshd : PARANOID'
 
 Next, add the recipe to the manifests in question:
 

@@ -18,6 +18,6 @@
 # versions of Debian this has been the default.
 # ALL: PARANOID
 
-<% options[:hosts][:deny].each do |acl| %>
+<% deny_list.each do |acl| %>
 <%= acl %>
 <% end %>
