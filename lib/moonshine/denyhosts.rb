@@ -10,7 +10,6 @@ module Moonshine
       %w(allow deny).each do |k|
         file "/etc/hosts.#{k}",
           :ensure  => :present,
-          :notify => service('denyhosts'),
           :content => template(File.join(File.dirname(__FILE__), '..', '..', 'templates', "hosts.#{k}.erb"), binding)
       end
     end
