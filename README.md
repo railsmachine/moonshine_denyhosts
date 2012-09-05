@@ -5,7 +5,7 @@ A simple Moonshine plugin for managing denyhosts.
 ### Installation
 
     # Rails 2
-    script/plugin install git://github.com/railsmachine/moonshine_denhosts.git --force
+    script/plugin install git://github.com/railsmachine/moonshine_denyhosts.git --force
     # Rails 3
     script/rails plugin install git://github.com/railsmachine/moonshine_denyhosts.git --force
 
