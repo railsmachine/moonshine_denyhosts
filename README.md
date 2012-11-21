@@ -18,6 +18,8 @@ Configure as necessary in your moonshine.yml (or stage-specific moonshine yml):
       :deny:
         - 'sshd : PARANOID'
 
+For a full list of options and their default values, see `lib/moonshine/denyhosts/default_configuration.yml`.
+
 Next, add the recipe to the manifests in question:
 
     # app/manifests/application_manifest.rb
