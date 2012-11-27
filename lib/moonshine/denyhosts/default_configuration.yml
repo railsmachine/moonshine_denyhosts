@@ -27,10 +27,8 @@ smtp_host: localhost
 smtp_port: 25
 smtp_username: null
 smtp_password: null
-smtp_from: DenyHosts <nobody@localhost>
-# smtp_subject will be dynamically set in the recipe to: DenyHosts Report for #{hostname}
-#smtp_subject: DenyHosts Report
-smtp_date_format: %a, %d %b %Y %H:%M:%S %z
+smtp_from: "DenyHosts <nobody@localhost>"
+smtp_date_format: "%a, %d %b %Y %H:%M:%S %z"
 
 syslog_report: true
 allowed_hosts_hostname_lookup: false
