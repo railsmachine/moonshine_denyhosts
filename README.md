@@ -29,3 +29,7 @@ Next, add the recipe to the manifests in question:
 ### Deploying
 
 That's it. Deploy and done!
+
+***
+
+Unless otherwise specified, all content copyright &copy; 2014, [Rails Machine, LLC](http://railsmachine.com)
