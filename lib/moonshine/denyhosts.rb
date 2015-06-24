@@ -2,7 +2,7 @@ module Moonshine
   module Denyhosts
     def denyhosts(options = {})
       options = denyhosts_default_configuration.merge(options.symbolize_keys).merge((configuration[:denyhosts] || {}).symbolize_keys)
-      options[:smtp_subject] ||= "DenyHosts Report for #{Facter.fqdn}"
+      options[:smtp_subject] ||= "DenyHosts Report for #{Facter.value(:fqdn)}"
 
       package 'denyhosts',
         :ensure => :installed
